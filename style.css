@@ -1,0 +1,246 @@
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  margin: 5rem;
+  width: 100%;
+  max-width: 100rem;
+  min-height: 100rem;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 3.5rem 5.5rem rgba(0, 0, 0, 0.1);
+}
+.left-side {
+  position: relative;
+  background: #003147;
+  padding: 4rem;
+}
+.right-side {
+  position: relative;
+  background: #fff;
+  padding: 4rem;
+}
+.profile-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.img-box {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-text h2 {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profile-text h2 span {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.contact-info {
+  padding-top: 4rem;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.contact-info ul {
+  position: relative;
+}
+.contact-info ul li {
+  position: relative;
+  list-style: none;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.contact-info ul li .icon {
+  display: inline-block;
+  width: 3rem;
+  font-size: 1.8rem;
+  color: #03a9f4;
+}
+.contact-info ul li span {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.education ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education li h5 {
+  color: #03a9f4;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+#university {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.education li h4 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.percent {
+  position: relative;
+  width: 100%;
+  height: 0.6rem;
+  background: #081921;
+  display: block;
+  margin-top: 0.5rem;
+}
+.level {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #03a9f4;
+  height: 100%;
+}
+.about {
+  margin-bottom: 4rem;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+p {
+  color: #333;
+  font-size: 1.2rem;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+.year-company {
+  min-width: 13rem;
+}
+.year-company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.text h4 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #2a7da2;
+}
+.about-skills {
+  margin-bottom: 4rem;
+}
+.about-skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 13rem 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.about-skills .box h2 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 500;
+}
+.about-skills .box .percent {
+  background: #f0f0f0;
+}
+.hobbies ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+}
+.hobbies ul li {
+  color: #333;
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.hobbies ul li .fa {
+  color: #03a9f4;
+  font-size: 1.4rem;
+  width: 1.5rem;
+}
+.rodo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 4rem;
+}
+.rodo p {
+  font-size: 1rem;
+}
+@media (max-width: 100rem) {
+  html {
+    font-size: 45%;
+  }
+  .container {
+    margin: 2rem;
+  }
+  .left-side {
+    padding: 2.5rem;
+  }
+}
+@media (max-width: 65rem) {
+  html {
+    font-size: 40%;
+  }
+}
